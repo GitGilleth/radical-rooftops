@@ -13,6 +13,8 @@ public class LookAtPlayer : MonoBehaviour
     [SerializeField] float timeBetweenShots = 0.5f;
     bool isShooting = false;
 
+
+
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +29,11 @@ public class LookAtPlayer : MonoBehaviour
             }
             
         }
+    }
+
+    private void Start()
+    {
+
     }
     void OnDrawGizmosSelected()
     {
@@ -44,4 +51,6 @@ public class LookAtPlayer : MonoBehaviour
         GameObject bullet = Instantiate(Bullet, bulletSpot.position, Quaternion.identity);
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
     }
+
+    
 }

@@ -18,10 +18,13 @@ public class Death : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider colldier)
     {
-        Application.Quit();
-        print(other.gameObject);
-        UnityEditor.EditorApplication.isPlaying = false;
+        if (colldier.CompareTag("Player"))
+        {
+            Application.Quit();
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
+
     }
 }
