@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ledge
+  - Sentry
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - postProcessing
   - dontRender
   - bloom
-  - 
+  - Sentry
   - 
   - 
   - 
