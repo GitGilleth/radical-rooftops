@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2190822692706589695}
   - component: {fileID: 42808102556995278}
   - component: {fileID: 8621955663817925136}
+  - component: {fileID: 3991513037035135911}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Sentry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3991513037035135911
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6619288215710492743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7265744515449303197, guid: d5f05c1c0aecd8d4ea7268f7d8b05dbe, type: 3}
 --- !u!1 &8072086547195812540
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,9 +109,10 @@ GameObject:
   - component: {fileID: 2496325011684882771}
   - component: {fileID: 6273399499531281811}
   - component: {fileID: 56718069800802090}
+  - component: {fileID: 6534106880408707416}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Untagged
+  m_TagString: Sentry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,6 +183,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6534106880408707416
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072086547195812540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8201437419870775723, guid: d5f05c1c0aecd8d4ea7268f7d8b05dbe, type: 3}
 --- !u!1 &8312162082383943921
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8417230052300771735}
   - component: {fileID: 8312162081690105465}
-  - component: {fileID: 59841530561999425}
   m_Layer: 0
   m_Name: TurretFull
   m_TagString: Sentry
@@ -251,17 +280,3 @@ MonoBehaviour:
   bulletSpot: {fileID: 8312162082383943920}
   bulletSpeed: 5000
   timeBetweenShots: 0.5
---- !u!64 &59841530561999425
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9195174572718099245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8201437419870775723, guid: d5f05c1c0aecd8d4ea7268f7d8b05dbe, type: 3}

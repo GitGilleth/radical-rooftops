@@ -41,7 +41,7 @@ public class LedgeGrabbing : MonoBehaviour
 
     private void Update()
     {
-        LedgeDetection();
+        //LedgeDetection();
         SubStateMachine();
     }
 
@@ -71,18 +71,18 @@ public class LedgeGrabbing : MonoBehaviour
         }
     }
 
-    private void LedgeDetection()
-    {
-        bool ledgeDetected = Physics.SphereCast(transform.position, ledgeSphereCastRadius, cam.forward, out ledgeHit, ledgeDetectionLength, whatIsLedge);
+    //private void LedgeDetection()
+    //{
+    //    bool ledgeDetected = Physics.SphereCast(transform.position, ledgeSphereCastRadius, cam.forward, out ledgeHit, ledgeDetectionLength, whatIsLedge);
 
-        if (!ledgeDetected) return;
+    //    if (!ledgeDetected) return;
 
-        float distanceToLedge = Vector3.Distance(transform.position, ledgeHit.transform.position);
+    //    float distanceToLedge = Vector3.Distance(transform.position, ledgeHit.transform.position);
 
-        if (ledgeHit.transform == lastLedge) return;
+    //    if (ledgeHit.transform == lastLedge) return;
 
-        if (distanceToLedge < maxLedgeGrabDistance && !holding) EnterLedgeHold();
-    }
+    //    if (distanceToLedge < maxLedgeGrabDistance && !holding) EnterLedgeHold();
+    //}
 
     private void LedgeJump()
     {

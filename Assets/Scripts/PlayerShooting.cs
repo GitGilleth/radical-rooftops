@@ -17,7 +17,8 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (Physics.Raycast(transform.position, transform.forward, out hit, 1000f))
+            Debug.DrawRay(transform.position, transform.forward, Color.green);
+            if (Physics.Raycast(transform.position, transform.forward, out hit))
             {
                 if (hit.collider.tag == "Sentry")
                 {
