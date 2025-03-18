@@ -23,7 +23,10 @@ public class Death : MonoBehaviour
         if (colldier.CompareTag("Player"))
         {
             Application.Quit();
-            UnityEditor.EditorApplication.isPlaying = false;
+            if (Application.isEditor)
+            {
+                UnityEditor.EditorApplication.isPlaying = false;
+            }
         }
 
     }
